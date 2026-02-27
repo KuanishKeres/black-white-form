@@ -3,21 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Input Field Animation</title>
+	<title>Black & White Register Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="form">
+	<div class="overlay"></div>
+	<main class="form">
 		<form action="/" class="form_content">
-			<h1>Registor Form</h1>
+			<p class="form_kicker">Black & White Edition</p>
+			<h1>Register Form</h1>
+			<p class="form_subtitle">Create your account in a clean monochrome style.</p>
+
 			<div class="form_box">
-				<input type="text" class="form_input" placeholder="Enter Name">
-				<label for="" class="form_label">ENTER NAME</label>
+				<input id="name" type="text" class="form_input" placeholder="Enter Name" required>
+				<label for="name" class="form_label">ENTER NAME</label>
 				<div class="form_shadow"></div>
 			</div>
+
 			<div class="form_box">
-				<input type="email" class="form_input" placeholder="Enter Email">
-				<label for="" class="form_label">ENTER EMAIL</label>
+				<input id="email" type="email" class="form_input" placeholder="Enter Email" required>
+				<label for="email" class="form_label">ENTER EMAIL</label>
 				<div class="form_shadow"></div>
 			</div>
 
@@ -25,6 +33,6 @@
 				<input type="submit" class="form_submit" value="Sign Up">
 			</div>
 		</form>
-	</div>
+	</main>
 </body>
 </html>
