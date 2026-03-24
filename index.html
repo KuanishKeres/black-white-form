@@ -11,6 +11,38 @@
 </head>
 <body>
 	<div class="overlay"></div>
+	
+	<aside class="sidebar" id="sidebar">
+		<div class="sidebar_header">
+			<h2>Menu</h2>
+			<button class="close_toggle" id="closeToggle">&times;</button>
+		</div>
+		<nav class="sidebar_nav">
+			<ul class="sidebar_list">
+				<li><a href="#" class="sidebar_link">Dashboard</a></li>
+				<li><a href="#" class="sidebar_link">Settings</a></li>
+				<li><a href="#" class="sidebar_link">Profile</a></li>
+				<li><a href="#" class="sidebar_link">Logout</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<header class="header">
+		<div class="header_left">
+			<button class="menu_toggle" id="menuToggle" aria-label="Toggle menu">
+				<span></span><span></span><span></span>
+			</button>
+			<a href="#" class="header_logo">B&W.</a>
+		</div>
+		<nav class="nav">
+			<ul class="nav_list">
+				<li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">About</a></li>
+				<li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
 	<main class="form">
 		<form action="/" class="form_content">
 			<p class="form_kicker">Black & White Edition</p>
@@ -34,5 +66,25 @@
 			</div>
 		</form>
 	</main>
+
+	<footer class="footer">
+		<div class="footer_content">
+			<p>&copy; 2026 Black & White Edition. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script>
+		const menuToggle = document.getElementById('menuToggle');
+		const closeToggle = document.getElementById('closeToggle');
+		const sidebar = document.getElementById('sidebar');
+
+		menuToggle.addEventListener('click', () => {
+			sidebar.classList.add('open');
+		});
+
+		closeToggle.addEventListener('click', () => {
+			sidebar.classList.remove('open');
+		});
+	</script>
 </body>
 </html>
